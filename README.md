@@ -11,7 +11,7 @@ Catalog and shopping cart for mobile web applications using Sencha Touch 2.
 
 ## How to use
 
-Simply place a call to initialize SenchaCart into the tag <body> of your HTML code. The product catalog must be provided as a parameter of the call.
+Simply place a call to initialize SenchaCart into the tag body of your HTML code. The product catalog must be provided as a parameter of the call.
 
 Example:
 
