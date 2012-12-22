@@ -1,0 +1,20 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title id="page-title">Sencha Cart</title>
+	<link rel="stylesheet" type="text/css" href="sencha-touch/resources/css/sencha-touch.css">
+	<script type="text/javascript" language="JavaScript" src="sencha-touch/sencha-touch-all-compat.js"></script>
+	<script type="text/javascript" language="JavaScript" src="catalog-sample.js"></script>
+	<script type="text/javascript" language="JavaScript" src="senchacart.js"></script>
+	<style>
+		.main-toolbar .x-centered .x-innerhtml { text-overflow:initial; } /* disable chrome ellipsize in the toolbar title */
+	</style>
+</head>
+<body>
+	<script>
+		var catalog = _catalog; // see catalog-sample.js
+		SenchaCart.init(_catalog);
+	</script>
+</body>
