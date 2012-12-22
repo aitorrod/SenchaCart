@@ -1,6 +1,8 @@
 # SenchaCart 1.0
 
-Catalog and shopping cart for mobile web applications using Sencha Touch 2.
+Catalog and shopping cart for mobile web applications using Sencha Touch 2. Watch an example at:
+
+http://aitorrod.com/senchacart
 
 ## Features
 
@@ -50,10 +52,6 @@ Example:
 </body>
 </html>
 ```
-
-## Example
-
-http://aitorrod.com
 
 ## To do
 
