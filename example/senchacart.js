@@ -251,11 +251,11 @@ var SenchaCart = {
 		}
 		// Update cart data
 		if (exists) {
-			this.cart.products[i].quantity++;
-			CartView.updateProduct(this.cart.products[i]);
+			SenchaCart.cart.products[i].quantity++;
+			CartView.updateProduct(SenchaCart.cart.products[i]);
 		} else {
 			var _productView = CartView.getProductView(_product);
-			this.cart.products.push({product:_product, productView:_productView, quantity:1});
+			SenchaCart.cart.products.push({product:_product, productView:_productView, quantity:1});
 			CartView.content.getComponent(1).getComponent(0).insert(this.cart.products.length-1,_productView);
 		}
 		this.cart.nProducts++;
@@ -443,7 +443,7 @@ var CartView = {
 	getProductView: function(product){
 		var container =  Ext.create('Ext.Container', {
 			layout: 'hbox',
-			id: product.id,
+			id: 'cart'+product.id,
 			height: '5.5em',
 			items: [
 				{ html: '<img src="products/small/'+product.img+'" width="65px" height="65px" style="margin:2px" />' },
@@ -570,7 +570,7 @@ var CartView = {
 		var i=0;
 		for (i=0; i<nFooterItems; i++){
 			productView = footerItems[i];
-			if(productView.id === product.id){
+			if(productView.id == 'cart'+product.id){
 				this.content.getComponent(1).getComponent(0).remove(productView);
 				break;
 			}
