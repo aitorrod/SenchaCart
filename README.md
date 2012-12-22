@@ -55,6 +55,7 @@ Example:
 
 ## To do
 
+- Solve issues with the cart amount
 - Define module options for enable customization
 - Search and find a store to pick up the order
 - Shipping form
