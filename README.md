@@ -15,16 +15,19 @@ Simply place a call to initialize SenchaCart into the tag <body> of your HTML co
 
 Example:
 
+```
 ...
 <body>
 	<script>SenchaCart.init(product_catalog);</script>
 </body>
 </html>
+```
 
 , where product_catalog is a JavaScript array of products.
 
 Example:
 
+```
 var product_catalog = [
 	{
 		id:1, 
@@ -44,6 +47,7 @@ var product_catalog = [
 	},
 	...
 ];
+```
 
 ## To do
 
@@ -57,5 +61,7 @@ var product_catalog = [
 ## Contact
 
 This repository was created by Aitor Rodriguez-Alsina (aitorrod):
+
 Web: http://aitorrod.com
+
 Twitter: @aitorrod
