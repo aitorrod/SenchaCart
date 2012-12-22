@@ -11,42 +11,44 @@ Catalog and shopping cart for mobile web applications using Sencha Touch 2.
 
 ## How to use
 
-Simply place a call to initialize SenchaCart into the tag body of your HTML code. The product catalog must be provided as a parameter of the call.
+Simply create a product catalog and place a call to initialize SenchaCart into the tag body of your HTML code. The product catalog is a JavaScript array that must be provided as a parameter of the call.
 
 Example:
 
 ```
 ...
 <body>
-	<script>SenchaCart.init(product_catalog);</script>
+	<script>
+		var product_catalog = [
+			{
+				id:1, 
+				name:'Apple iPad 2', 
+				img: 'ipad.jpg', 
+				val: 499.00,  
+				desc: 'Advanced design. Thin. Light. Fully loaded. Technology so advanced, you\'ll forget its even there.',
+				featured: true
+			},
+			{
+				id:2, 
+				name:'Android Phone', 
+				img: 'android-phone.jpg', 
+				val: 99.00, 
+				desc: 'Flip out with this compact smartphone, offering a full touchscreen that rotates to reveal a full QWERTY keyboard.',
+				featured: true
+			},
+			{
+				id:3, 
+				name:'Headphones', 
+				img: 'headphone.jpg', 
+				val: 59.00, 
+				desc: 'Feel your music! With a comfortable, over-the-ear design, you may never want to take them off.',
+				featured: false
+			}
+		];
+		SenchaCart.init(product_catalog);
+	</script>
 </body>
 </html>
-```
-
-, where product_catalog is a JavaScript array of products.
-
-Example:
-
-```
-var product_catalog = [
-	{
-		id:1, 
-		name:'Apple iPad 2', 
-		img: 'ipad.jpg', 
-		val: 499.00,  
-		desc: 'Advanced design. Thin. Light. Fully loaded. Technology so advanced, you\'ll forget its even there.',
-		featured: true
-	},
-	{
-		id:2, 
-		name:'Android Phone', 
-		img: 'android-phone.jpg', 
-		val: 99.00, 
-		desc: 'Flip out with this compact smartphone, offering a full touchscreen that rotates to reveal a full QWERTY keyboard.',
-		featured: false
-	},
-	...
-];
 ```
 
 ## To do
