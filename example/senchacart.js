@@ -58,7 +58,7 @@ var SenchaCart = {
 			docked: 'top',
 			ui: 'dark',
 			cls: 'main-toolbar',
-			title: 'SenchaCart demo',
+			title: 'SenchaCart example',
 			items: [{
 				text: 'Back',
 				ui: 'back',
