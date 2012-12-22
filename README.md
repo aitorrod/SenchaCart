@@ -69,4 +69,4 @@ This repository was created by Aitor Rodriguez-Alsina (aitorrod):
 
 Web: http://aitorrod.com
 
-Twitter: @aitorrod
+Twitter: [@aitorrod](https://twitter.com/aitorrod)
